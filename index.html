@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bit Notes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="notes-header">
+      <div class="head">
+        <h1 id="heading">Notes</h1>
+        <label class="switch">
+          <input type="checkbox" class="toggle">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="searchbox">
+        <input type="text" class="search-notes"></input>
+        <i class="fa fa-search"></i>
+        <i class="far fa-times-circle"></i>
+
+      </div>
+    </div>
+    <ul class="all-notes">
+
+    </ul>
+    <div class="save-notes"><i class="far fa-save"></i></i> &nbsp Save notes</div>
+    <div class="add-notes"><i class="fas fa-plus"></i> &nbsp Add Notes</div>
+    <!-- <div class="edit-notes"><i class="far fa-edit"></i> &nbsp Edit Notes</div> -->
+
+    <div class="empty-notes">
+      <div class="empty">
+        <img src="images/empty_note.png" alt="empty" height="300px">
+        <!-- <i class="far fa-sticky-note"></i> -->
+      </div>
+      <div class="empty-text">
+        <h2>It's lonely here, add some notes</h2>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="currentnote">
+    <div class="note-header">
+      <div class="watermark">
+        <p>Bit Note</p>
+      </div>
+    </div>
+
+    <div class="notesdata">
+      <input type="text" class="note-title" placeholder="Note title">
+      <textarea class="fullnote" placeholder="Type here"></textarea>
+    </div>
+
+    <!-- <button onclick="launch_toast()">Show Toast</button> -->
+
+    <div id="toast">
+      <div id="img"><i class="far fa-envelope-open"></i></div>
+      <div id="desc" style="color:black"></div>
+    </div>
+
+    <div class="blank-notes">
+      <div class="blank">
+        <img src="images/empty_currentnote.png" alt="empty" height="350px">
+      </div>
+      <div class="blank-text">
+        <h2>Write down your thoughts</h2>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
